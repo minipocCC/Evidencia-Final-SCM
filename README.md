@@ -1,29 +1,23 @@
-# Sistema de Administración de Citas Médicas
-
-Este proyecto es una aplicación en Java que simula un sistema de administración de citas para un consultorio clínico.  
-Permite registrar doctores, pacientes, crear citas médicas y relacionarlas, además de contar con control de acceso mediante administradores.
-
----
 # Evidencia Final SCM
 
 ## Resumen Ejecutivo
 
 ### Descripción
-Este proyecto corresponde a la Evidencia Final de la materia **Software Configuration Management (SCM)**. Su propósito es demostrar la correcta aplicación de prácticas de control de versiones, documentación técnica, gestión de configuración y despliegue básico de una solución de software.
+Este proyecto corresponde a la Evidencia Final de la materia **Software Configuration Management (SCM)**. Su propósito es demostrar la correcta aplicación de prácticas de control de versiones, documentación técnica, gestión de configuración y despliegue básico de una solución de software. El proyecto consiste en un sistema de administración de citas médicas desarrollado en Java, utilizando archivos CSV como almacenamiento local.
 
 ### Problema identificado
-En muchos proyectos académicos y profesionales, la falta de control de versiones, documentación clara y procesos de instalación/configuración provoca errores, pérdida de información y dificultades para colaborar en equipo.
+En muchos proyectos académicos y profesionales, la falta de control de versiones, documentación clara y procesos de instalación/configuración provoca errores, pérdida de información y dificultades para colaborar en equipo. Además, los sistemas de citas médicas suelen carecer de organización, lo que genera confusión, duplicidad de registros y mala administración del tiempo.
 
 ### Solución
-Este proyecto implementa una estructura formal de documentación, control de versiones con Git y GitHub, lineamientos de contribución, y una guía completa para instalación, configuración y uso del sistema. Esto permite mantener orden, trazabilidad y claridad en el ciclo de vida del software.
+Este proyecto implementa una estructura formal de documentación, control de versiones con Git y GitHub, lineamientos de contribución, y una guía completa para instalación, configuración y uso del sistema. Además, se desarrolla un sistema de citas médicas que permite registrar pacientes, doctores y citas, almacenando la información en archivos CSV para facilitar su consulta y mantenimiento.
 
 ### Arquitectura
 Arquitectura conceptual del proyecto:
-- **Backend:** Java (estructura base para demostración SCM)
-- **Gestión de dependencias:** Maven
-- **Base de datos:** H2 (local) o PostgreSQL (producción)
+- **Backend:** Java (programación orientada a objetos)
+- **Almacenamiento:** Archivos CSV
 - **Control de versiones:** Git + GitHub
-- **Despliegue:** Local o nube (Heroku)
+- **Ejecución:** Consola / IDE (NetBeans, IntelliJ, VSCode)
+- **Despliegue:** Local
 
 ---
 
@@ -42,23 +36,22 @@ Arquitectura conceptual del proyecto:
 ## Requerimientos
 
 ### Servidores
-- Servidor embebido de Spring Boot (no requiere instalación adicional)
-- Opcional: Heroku para despliegue en la nube
+- No requiere servidor externo (aplicación local)
+- Ejecución mediante consola o IDE
 
 ### Bases de datos
-- H2 Database (modo local)
-- PostgreSQL (modo producción)
+- Archivos CSV:
+  - `pacientes.csv`
+  - `doctores.csv`
+  - `citas.csv`
 
 ### Paquetes adicionales
-- Spring Web
-- Spring Data JPA
-- Lombok (opcional)
-- H2 Database Driver
+- Ninguno (solo librerías estándar de Java)
 
 ### Versiones
-- **Java 17**
-- **Maven 3.8+**
+- **Java 17** (recomendado)
 - **Git 2.0+**
+- **IDE recomendado:** NetBeans / IntelliJ / VSCode
 
 ---
 
@@ -68,30 +61,3 @@ Arquitectura conceptual del proyecto:
 ```bash
 git clone https://github.com/minipocCC/Evidencia-Final-SCM.git
 cd Evidencia-Final-SCM
-
-
-## Instalación y configuración
-
-### Requisitos previos
-
-- JDK 11 instalado y configurado en el sistema.
-- IDE Java (por ejemplo, NetBeans).
-- Git instalado.
-- Cuenta en GitHub.
-
-### Pasos de instalación
-
-1. Clonar el repositorio:
-
-   ```bash
-   git clone https://github.com/USUARIO/NOMBRE-DEL-REPO.git
-   ## Licencia
-
-Este proyecto fue desarrollado con fines académicos como parte de la evidencia final del curso de Computación en Java de la Universidad Tecmilenio.  
-El código puede ser utilizado únicamente con propósitos educativos y no comerciales, respetando los lineamientos y políticas de la institución.
-## Créditos
-
-- **Autora:** SCM
-- **Curso:** Computación en Java  
-- **Institución:** Universidad Tecmilenio  
-- **Profesor:** Silvia Tello 
